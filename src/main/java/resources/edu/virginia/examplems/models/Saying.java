@@ -1,4 +1,4 @@
-package edu.virginia.examplems.core;
+package edu.virginia.examplems.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.Length;

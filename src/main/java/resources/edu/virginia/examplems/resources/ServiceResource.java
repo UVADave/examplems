@@ -1,6 +1,6 @@
 package edu.virginia.examplems.resources;
 
-import edu.virginia.examplems.core.Saying;
+import edu.virginia.examplems.models.Saying;
 import com.google.common.base.Optional;
 import com.codahale.metrics.annotation.Timed;
 

@@ -1,4 +1,4 @@
-package edu.virginia.examplems;
+package edu.virginia.examplems.core;
 
 import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,4 +1,4 @@
-package edu.virginia.examplems;
+package edu.virginia.examplems.core;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
@@ -6,9 +6,9 @@ import io.dropwizard.setup.Environment;
 import edu.virginia.examplems.resources.ServiceResource;
 import edu.virginia.examplems.health.MSHealthCheck;
 
-public class MSApplication extends Application<MSConfiguration> {
+public class ServiceApplication extends Application<ServiceConfiguration> {
     public static void main(String[] args) throws Exception {
-        new MSApplication().run(args);
+        new ServiceApplication().run(args);
     }
 
     @Override
@@ -29,8 +29,8 @@ public class MSApplication extends Application<MSConfiguration> {
                 configuration.getDefaultName()
         );
 
-        final MSHealthCheck healthCheck =
-                new MSHealthCheck(configuration.getTemplate());
+        final ServiceHealthCheck healthCheck =
+                new ServiceHealthCheck(configuration.getTemplate());
         environment.healthChecks().register("template", healthCheck);
 
         environment.jersey().register(resource);
