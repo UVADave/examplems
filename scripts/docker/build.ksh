@@ -1,1 +1,1 @@
-docker build -t centos-example .
+docker build -t uvadave/examplems .
