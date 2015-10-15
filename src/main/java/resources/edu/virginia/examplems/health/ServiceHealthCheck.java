@@ -2,10 +2,10 @@ package edu.virginia.examplems.health;
 
 import com.codahale.metrics.health.HealthCheck;
 
-public class MSHealthCheck extends HealthCheck {
+public class ServiceHealthCheck extends HealthCheck {
     private final String template;
 
-    public MSHealthCheck(String template) {
+    public ServiceHealthCheck(String template) {
         this.template = template;
     }
 
