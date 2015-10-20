@@ -6,7 +6,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "standalone", primary: true do |standalone|
 
     config.vm.hostname = "standalone"
-    standalone.vm.box = "puppet-vagrant-boxes.puppetlabs.com-centos-65-x64-virtualbox-puppet.box"
+    standalone.vm.box = "puppetlabs/centos-7.0-64-puppet"
     operating_system = "centos"
 
     #mailserver = "localhost"
