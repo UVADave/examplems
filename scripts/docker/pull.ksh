@@ -1,1 +1,1 @@
-sudo docker pull uvadave/examplems:latest
+docker pull uvadave/examplems:latest
