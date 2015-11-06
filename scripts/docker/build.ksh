@@ -1,2 +1,12 @@
+# set the definitions
+INSTANCE=examplems
+NAMESPACE=uvadave
+
+# move in the yaml file
 cp src/main/resources/service.yaml target/
-docker build -t uvadave/examplems .
+
+# build the image
+docker build -t $NAMESPACE/$INSTANCE .
+
+# all good
+exit 0
