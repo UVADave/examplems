@@ -15,7 +15,7 @@ docker rm $INSTANCE
 docker rmi $NAMESPACE/$INSTANCE:current  
 
 # tag the latest as the current
-docker tag -f $NAMESPACE/$INSTANCE:latest $NAMESPACE/$INSTANCE
+docker tag -f $NAMESPACE/$INSTANCE:latest $NAMESPACE/$INSTANCE:current
 
 # run the instance
 docker run -d -p $host_ip:8080:8080 -p $host_ip:8081:8081 --name $INSTANCE $NAMESPACE/$INSTANCE:latest
